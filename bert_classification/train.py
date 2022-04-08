@@ -133,7 +133,8 @@ def train(config):
         print("Accuracy: %.4f Loss in test %.4f" % (acc, loss))
         if top_acc < acc:
             top_acc = acc
-            torch.save(multi_classification_model.state_dict(), config.save_path)
+            torch.save(state, filepath)
+            torch.save(multi_classification_model.state_dict(), 'checkpoint_model_epoch_{}.pt'.format(epoch))
             print(report, confusion)
         time.sleep(1)
 
