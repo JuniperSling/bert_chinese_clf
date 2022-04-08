@@ -1,6 +1,6 @@
 # data path
 data_dir: /kaggle/working/bert_chinese_clf/data/THUCNews/news
-save_path: /kaggle/working/bert_chinese_clf/ckpt/albert_classification
+save_path: /kaggle/working/bert_chinese_clf/ckpt
 
 # BERT parameter setup (change here while changing pre-train model)
 pretrained_path: /kaggle/working/bert_chinese_clf/data/Learn_Project/Backup_Data/bert-chinese
